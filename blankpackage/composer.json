@@ -1,0 +1,31 @@
+{
+    "name": "blankpackage/blank",
+    "description": "A demo package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "John Doe",
+        "email": "john@doe.com"
+      }
+    ],
+    "require": {
+      "laravel/framework": "^9.3.0",
+      "livewire/livewire": "2.10.7"
+    },
+    "autoload": {
+      "classmap": [
+        "database"
+      ],
+      "psr-4": {
+        "blankpackage\\blank\\": "src"
+      }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "blankpackage\\blank\\BlankServiceProvider"
+            ]
+        }
+    }
+}
